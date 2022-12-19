@@ -1,0 +1,90 @@
+:root {
+  /* Dark blue */
+  --dark-blue-100: #609ed4;
+  --dark-blue-200: #356ea9;
+  --dark-blue-300: #0a3871;
+  --dark-blue-400: #072b61;
+  --dark-blue-500: #052051;
+
+  /* Light blue */
+  --light-blue-100: #f3f5fc;
+  --light-blue-200: #eff1fa;
+  --light-blue-300: #e9ecf8;
+  --light-blue-400: #aab2d5;
+  --light-blue-500: #757fb2;
+
+  /* gray */
+  --gray-100: #ced4da;
+  --gray-200: #adb5bd;
+  --gray-300: #868e96;
+  --gray-400: #495057;
+  --gray-500: #343a40;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+
+  background-color: var(--light-blue-100);
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+}
+
+.logo {
+  width: 35px;
+  height: 45px;
+
+  margin: 25px 15px;
+}
+
+.main__container--input {
+  width: 90%;
+  height: 300px;
+  margin: auto;
+}
+
+#input {
+  background-color: var(--light-blue-100);
+
+  width: 100%;
+  height: 80%;
+
+  border-radius: 5px;
+  font-size: 1.2rem;
+  border: none;
+  padding: 0 5px;
+
+  outline: none;
+  resize: none;
+
+  font-family: "Inter", sans-serif;
+}
+
+#input::placeholder {
+  color: var(--dark-blue-300);
+  font-size: 2rem;
+  padding-top: 50px;
+}
+
+#input:focus::placeholder{
+  color: transparent;
+}
+
+.input-restricciones__text {
+  color: var(--gray-400);
+  font-size: 14px;
+}
+
+.bx {
+  margin: auto 5px auto 0;
+  font-size: 19px;
+  vertical-align: text-top;
+}
