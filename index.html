@@ -10,6 +10,7 @@
   <!-- Boxicons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <!-- css -->
+  <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/style.css">
   <!-- Favicon -->
   <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
@@ -24,6 +25,7 @@
   </header>
 
   <main class="main__container">
+
     <div class="main__container--input">
       <textarea name="" id="input" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
       <div class="input-restricciones">
@@ -32,9 +34,33 @@
         </p>
       </div>
     </div>
-    <button type="submit" class="button-input" id="encriptar">Encriptar</button>
-    <button type="submit" class="button-input" id="desencriptar">Desencriptar</button>
+    <button type="submit" class="button" id="encriptar">Encriptar</button>
+    <button type="submit" class="button" id="desencriptar">Desencriptar</button>
+
+    <div class="main__container--output">
+      <section class="img__container">
+        <img src="./img/munneco.png" alt="">
+      </section>
+
+      <section class="text__container">
+        <h3>Ningún mensaje fue encontrado
+        </h3>
+        <p class="text__container--text" id="text">Ingresa el texto que desees encriptar o desencriptar.</p>
+      </section>
+
+      <button type="" class="button button--not-show" id="copiar">Copiar</button>
+
+    </div>
   </main>
+
+  <footer class="pie-pagina">
+    <p>© 2022 Todos los derechos reservados por Cristhian Rafael Pacheco Vergara | Oracle+AluraLatam. </p>
+    <!--Siguientes hipervinculos a paginas externas-->
+    <a href="https://www.linkedin.com/in/crpachecov/" target="_blank" rel="noopener noreferrer"> <i
+        class='bx bxl-linkedin-square icons__footer'></i></a>
+    <a href="https://github.com/crpachecov" target="_blank" rel="noopener noreferrer"><i
+        class='bx bxl-github icons__footer'></i></a>
+  </footer>
 </body>
 
 </html>

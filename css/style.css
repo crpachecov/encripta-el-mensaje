@@ -45,6 +45,10 @@ body {
   margin: 25px 15px;
 }
 
+main {
+  min-height: 80vh;
+}
+
 .main__container--input {
   width: 90%;
   height: 300px;
@@ -74,7 +78,7 @@ body {
   padding-top: 50px;
 }
 
-#input:focus::placeholder{
+#input:focus::placeholder {
   color: transparent;
 }
 
@@ -89,7 +93,7 @@ body {
   vertical-align: text-top;
 }
 
-.button-input{
+.button {
   width: 90%;
   height: 60px;
   margin: 0 5% 10px;
@@ -100,12 +104,81 @@ body {
   font-weight: 400;
 }
 
-#encriptar{
+#encriptar {
   background-color: var(--dark-blue-300);
   color: #f3f5fc;
 }
 
-#desencriptar{
+#desencriptar {
   background-color: var(--light-blue-100);
   color: var(--dark-blue-300);
+}
+
+.main__container--output {
+  width: 90%;
+  height: 250px;
+  display: flex;
+  margin: 20px auto 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+  background-color: white;
+  
+}
+
+.img__container {
+  display: none;
+}
+
+.text__container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.text__container h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+
+  overflow: hidden;
+}
+
+.text__container--text {
+  font-size: 1rem;
+  color: var(--gray-400);
+}
+
+#copiar {
+  margin-top: 10px;
+  background-color: white;
+  color: var(--dark-blue-300);
+}
+
+.button--not-show {
+  display: none;
+}
+
+.pie-pagina {
+  margin-top: auto;
+  width: 100%;
+  padding: 10px;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pie-pagina p {
+  color: var(--dark-blue-500);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.icons__footer {
+  font-size: 1.5rem;
+  margin: 5px 5px 0 0;
+  color: black;
 }
