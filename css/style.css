@@ -102,6 +102,17 @@ main {
 
   font-size: 16px;
   font-weight: 400;
+  transition: transform 0.2s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.button:active {
+  transform: scale(0.95);
+  background: black;
 }
 
 #encriptar {
@@ -118,12 +129,13 @@ main {
   width: 90%;
   height: 250px;
   display: flex;
+  flex-direction: column;
+
   margin: 20px auto 0 auto;
   border-radius: 20px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 
   background-color: white;
-  
 }
 
 .img__container {
@@ -136,7 +148,7 @@ main {
   text-align: center;
 }
 
-.text__container h3 {
+.text__container--title {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0 0 10px 0;

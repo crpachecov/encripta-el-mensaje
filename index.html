@@ -27,15 +27,16 @@
   <main class="main__container">
 
     <div class="main__container--input">
-      <textarea name="" id="input" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+      <textarea name="input-area" id="input" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
       <div class="input-restricciones">
         <p class="input-restricciones__text">
           <span class="bx bxs-error-circle bx-flashing bx-rotate-180"></span>Solo letras minúsculas y sin acentos
         </p>
       </div>
     </div>
-    <button type="submit" class="button" id="encriptar">Encriptar</button>
-    <button type="submit" class="button" id="desencriptar">Desencriptar</button>
+
+    <button class="button" id="encriptar" for="input-area">Encriptar</button>
+    <button class="button" id="desencriptar">Desencriptar</button>
 
     <div class="main__container--output">
       <section class="img__container">
@@ -43,7 +44,7 @@
       </section>
 
       <section class="text__container">
-        <h3>Ningún mensaje fue encontrado
+        <h3 class="text__container--title" id="title">Ningún mensaje fue encontrado
         </h3>
         <p class="text__container--text" id="text">Ingresa el texto que desees encriptar o desencriptar.</p>
       </section>
@@ -61,6 +62,8 @@
     <a href="https://github.com/crpachecov" target="_blank" rel="noopener noreferrer"><i
         class='bx bxl-github icons__footer'></i></a>
   </footer>
+
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
