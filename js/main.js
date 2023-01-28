@@ -7,12 +7,15 @@ let buttonCopy = document.getElementById("copiar");
 let title = document.getElementById("title");
 let textEncrypted = document.getElementById("text");
 
+let containerImg = document.getElementsByClassName("img__container");
+
 function encryptText() {
     let text = inputArea.value;
     let textDefault = "Ingresa el texto que desees encriptar o desencriptar.";
 
     if (text != "") {
         title.style.display = "none";
+        containerImg[0].style.display = "none";
         buttonCopy.style.display = "block";
         text = text.replace(/e/g, "enter");
         text = text.replace(/i/g, "imes");
@@ -22,6 +25,7 @@ function encryptText() {
         textEncrypted.innerHTML = text;
     } else {
         title.style.display = "block";
+        containerImg[0].style.display = "block";
         buttonCopy.style.display = "none";
         textEncrypted.innerHTML = textDefault;
     }
@@ -33,6 +37,7 @@ function desencryptText() {
 
     if (text != "") {
         title.style.display = "none";
+        containerImg[0].style.display = "none";
         buttonCopy.style.display = "block";
         text = text.replace(/enter/g, "e");
         text = text.replace(/imes/g, "i");
@@ -43,6 +48,7 @@ function desencryptText() {
     } else {
         title.style.display = "block";
         buttonCopy.style.display = "none";
+        containerImg[0].style.display = "block";
         textEncrypted.innerHTML = textDefault;
     }
 }

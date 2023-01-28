@@ -250,4 +250,71 @@ main {
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
+  .main__container--input {
+    width: 60%;
+    height: 80vh;
+    margin: auto 5%;
+
+    float: left;
+  }
+
+  #input {
+    font-size: 1.5rem;
+    height: 70%;
+  }
+
+  .input-restricciones__text {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .button {
+    width: 40%;
+    margin: 0 2% 10px;
+  }
+
+  #encriptar {
+    float: left;
+    margin-left: 5%;
+  }
+
+  .main__container--output {
+    width: 25%;
+    height: 80vh;
+    margin: auto 0;
+
+    justify-content: flex-start;
+  }
+
+  .img__container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .text__container {
+    height: 40%;
+    margin: 5% auto;
+  }
+
+  .text__container--title {
+    font-size: 1.3rem;
+  }
+
+  .text__container--text {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+
+  #copiar {
+    width: 80%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pie-pagina p {
+    font-size: 1rem;
+    overflow: hidden;
+  }
 }
